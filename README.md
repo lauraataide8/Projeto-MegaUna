@@ -22,7 +22,7 @@ Nesta fase inicial, o projeto foca nos fundamentos da **Programação Orientada 
 * **Classe `MegaUnaV3`:** Contém o motor principal do jogo, utilizando métodos modulares para coleta de dados, processamento de jogadas e finalização.
 
 ### 🛠️ Tecnologias e Conceitos Aplicados
-* **Linguagem:** Java 17.
+* **Linguagem:** Java 17+.
 * **Scanner & Random:** Manipulação de entrada de dados e geração de valores aleatórios.
 * **Modularização:** Divisão de responsabilidades em métodos estáticos (`coletarNome`, `jogar`, `finalizarJogo`).
 * **POO:** Instanciação de objetos para manter o estado do jogo.
