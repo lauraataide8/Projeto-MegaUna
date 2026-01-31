@@ -1,31 +1,47 @@
-# 🚀 Projeto: Mega Una (API REST)
+🚀 Projeto Mega Una - Jornada Spring Boot (SENAI)
+Este projeto faz parte da trilha de Desenvolvimento de APIs REST com Spring Boot no SENAI. O Mega Una é um sistema de sorteios que está sendo construído ao longo de 10 sábados, partindo da lógica de programação pura até a exposição de endpoints profissionais.
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![RestAPI](https://img.shields.io/badge/Rest--API-005571?style=for-the-badge&logo=restapi)
-![SENAI](https://img.shields.io/badge/SENAI-Red?style=for-the-badge)
+📅 Cronograma de Evolução
+O projeto está dividido em duas fases principais no curso:
 
-O **Mega Una** é o meu primeiro projeto desenvolvido durante o curso de **Desenvolvimento de APIs REST no SENAI**. A aplicação consiste em um sistema de sorteios inspirado na dinâmica da Mega-Sena, permitindo a gestão de apostas e a geração de números aleatórios via requisições HTTP.
+Fase 1 (Sábados 1-10): Construção e amadurecimento do Mega Una (de Lógica OO para API REST).
 
----
+Fase 2 (Sábados 11-15): Desenvolvimento de um segundo projeto final aplicado.
 
-## 📋 Sobre o Projeto
-O objetivo principal foi aplicar os fundamentos da arquitetura REST, manipulando recursos de sorteios e apostas através dos métodos HTTP (GET, POST, etc.). O sistema garante que os números gerados sigam as regras de um sorteio real, evitando duplicidade e respeitando os intervalos numéricos definidos.
+💻 Estado Atual do Projeto (V3)
+Atualmente, o projeto utiliza Programação Orientada a Objetos (POO) para gerenciar a lógica do sorteio:
 
-## 🛠️ Tecnologias e Conceitos Aplicados
-* **Linguagem:** Java (utilizando as bibliotecas padrão de sorteio).
-* **Arquitetura:** REST (Representational State Transfer).
-* **Ferramentas:** PowerShell, Postman e IntelliJ IDEA.
-* **Lógica de Programação:** Uso de `Collections` e algoritmos de aleatoriedade.
+Classe Jogo: Encapsula a lógica de sorteio utilizando java.util.Random e controla o limite de tentativas.
 
-## ⚙️ Funcionalidades (Endpoints)
-| Método | Endpoint | Descrição |
-| :--- | :--- | :--- |
-| `POST` | `/sorteio` | Gera um novo jogo com 6 números únicos (01 a 60). |
-| `GET` | `/resultados` | Lista os últimos jogos gerados. |
-| `GET` | `/conferir/{id}` | Verifica se uma aposta específica foi premiada. |
+Classe MegaUnaV3: Gerencia a interação com o usuário via console (Scanner), modularizada em métodos estáticos para melhor organização.
 
-## 💡 Por que este projeto é importante?
-Sendo meu primeiro projeto no SENAI, o Mega Una marca a transição da lógica de programação básica para o desenvolvimento de sistemas conectados. Ele resolve problemas clássicos de backend, como:
-* **Validação de Dados:** Impedir que números repetidos sejam sorteados.
-* **Padronização:** Retorno de respostas em formato JSON.
-* **Organização:** Estruturação de pastas e responsabilidades no código.
+🛠️ Tecnologias Utilizadas nesta Etapa
+Linguagem: Java 23+.
+
+Conceitos: Métodos estáticos, Instanciação de classes, Estruturas de repetição (do-while) e Condicionais.
+
+IDE: IntelliJ IDEA.
+
+⚙️ Próximos Passos (Backlog do Curso)
+Como parte do aprendizado de API REST, as próximas atualizações incluirão:
+
+Integração com Spring Boot: Transformar o console em uma aplicação web.
+
+Criação de Controllers: Criar rotas como /api/jogar e /api/resultado.
+
+Persistência de Dados: Salvar o histórico de jogos em um banco de dados (H2 ou MySQL).
+
+Tratamento de Exceções: Lidar com erros de entrada de forma elegante seguindo os padrões REST.
+
+🚀 Como Executar
+Atualmente, por ser uma aplicação de console:
+
+Clone o repositório.
+
+Abra no IntelliJ IDEA.
+
+Execute a classe MegaUnaV3.java.
+
+Siga as instruções no console para tentar adivinhar o número sorteado!
+
+Nota do Desenvolvedor: Este é o meu primeiro projeto no curso e reflete minha evolução constante em Java. A cada sábado, o código será refatorado para aplicar as melhores práticas de mercado.
